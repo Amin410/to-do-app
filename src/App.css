@@ -1,0 +1,14 @@
+body {
+  background-color: gainsboro;
+}
+
+main {
+  display: bloc;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 0px;
+  margin: 100px;
+  margin: 0 auto;
+  width: 30%;
+  height: 70%;
+}
