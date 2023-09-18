@@ -1,11 +1,16 @@
 import React, { useState } from "react";
 import "../App.css";
-const TaskForm = () => {
+
+export default function TaskForm({ onAdd }) {
   const [taskName, setTaskName] = useState();
-  console.log(taskName);
+  function handleSubnit(ev) {
+    ev.preventDefault();
+    onAdd(taskName);
+    setTaskName("");
+  }
   return (
     <div>
-      <form className="box-form" action="">
+      <form className="box-form" onSubmit={handleSubnit}>
         <button>+</button>
         <input
           type="text"
@@ -16,5 +21,4 @@ const TaskForm = () => {
       </form>
     </div>
   );
-};
-export default TaskForm;
+}

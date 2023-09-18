@@ -1,14 +1,42 @@
 body {
-  background-color: gainsboro;
+  background-color: #17181f;
+  color: #aaa;
+}
+* {
+  box-sizing: border-box;
+}
+form {
+  border: 3px solid #30313d;
+  padding: 5px;
+  display: flex;
+}
+form input[type="text"] {
+  background: none;
+  color: aliceblue;
+  border: 0;
+  padding: 5px 8px;
+  display: block;
+  width: 100%;
+}
+form button {
+  background-color: #61daf8;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 main {
-  display: bloc;
-  justify-content: center;
-  align-items: center;
-  padding: 15px 0px;
-  margin: 100px;
-  margin: 0 auto;
-  width: 30%;
-  height: 70%;
+  max-width: 300px;
+  margin: 20px auto;
+}
+.each-task {
+  background-color: #30313d;
+  border-radius: 10px;
+  padding: 5px;
+  margin-top: 5px;
+  display: flex;
+}
+
+.checkbox {
+  padding: 2px 3px;
+  fill: blue;
 }
